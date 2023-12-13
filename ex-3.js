@@ -38,4 +38,6 @@ getJohnProfile().then((data)=>{
   console.log(data);
 }).then(getJohnOrders).then((data)=>{
   console.log(data);
+}).catch((error)=>{
+  console.log(error);
 })

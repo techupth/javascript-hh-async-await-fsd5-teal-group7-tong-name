@@ -13,8 +13,12 @@ let getJohnProfile = async () => {
   });
 };
 // Start coding here
- async function getDatajohn(){
-  const getJohnData=await getJohnProfile()
-  console.log(getJohnData);
+async function getDatajohn() {
+  try {
+    const getJohnData = await getJohnProfile();
+    console.log(getJohnData);
+  } catch (error) {
+    console.log(error);
+  }
 }
-getDatajohn()
+getDatajohn();
