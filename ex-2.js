@@ -12,4 +12,8 @@ let getJohnProfile = () => {
   });
 };
 
-// Start coding here
+getJohnProfile()
+  .then((profile) => {})
+  .catch((error) => {
+    console.log(error);
+  });
